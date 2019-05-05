@@ -1,5 +1,6 @@
 body {
     background: red;
+    background-image: linear-gradient(red, rgb(177, 87, 87));
 }
 
 h1 {
@@ -30,6 +31,12 @@ h3 {
 button {
     position: relative;
     left: 700px;
+}
+
+a:link {
+  position: relative;
+  left: 200px;
+  color: darkblue;
 }
 
 * {box-sizing:border-box}
