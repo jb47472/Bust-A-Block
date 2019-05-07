@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Contact Us form</title>
   <link rel="stylesheet" href="./styles/style.css">
+ 
+  
 </head>
 
 <body>
@@ -12,14 +14,14 @@
   <div class="wrapper">
     <div class="contact-form">
       <div class="input-fields">
-        <input type="text" class="input" placeholder="Name">
-        <input type="text" class="input" placeholder="Email Address">
-        <input type="text" class="input" placeholder="Phone">
-        <input type="text" class="input" placeholder="Subject">
+        <input type="text" class="input" id = "name" placeholder="Name" >
+        <input type="text" class="input" id = "email" placeholder="Email Address" >
+        <input type="text" class="input" id = "phone" placeholder="Phone" >
+        <input type="text" class="input" id = "subject" placeholder="Subject" >
       </div>
       <div class="msg">
-        <textarea placeholder="Message"></textarea>
-        <div class="btn">send</div>
+        <textarea id = "message" placeholder="Message" required></textarea>
+        <div id = "send" class="btn">send</div>
       </div>
     </div>
     <footer class="footer text-center">
@@ -54,7 +56,9 @@
 
 
 
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="./js/contact.js"></script>
+    <script type="text/javascript"></script>
 </body>
 
 </html>
