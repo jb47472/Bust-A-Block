@@ -168,3 +168,8 @@ img {
   position: relative;
   left: 15px;
 }
+
+#link {
+  position: relative;
+  left: 300px;
+}
