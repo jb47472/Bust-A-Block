@@ -1,0 +1,64 @@
+@media screen and (max-width: 1024px) {
+
+   #reel {
+       position: relative;
+       left: 200px;
+   }
+
+   #right {
+       position: relative;
+       left: 0;
+   }
+
+   #left {
+        position: relative;
+        left: 0;
+    }
+
+    .btn {
+        position: relative;
+        left: 435px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #box {
+        width: 50%;
+        position: relative;
+        bottom: 300px;
+        left: 185px;
+    }
+
+    #right {
+        position: relative;
+        bottom: 600px;
+        left: 550px;
+    }
+
+    img {
+        position: relative;
+        left: 325px;
+      }
+}
+
+@media screen and (max-width: 415px) {
+
+    
+}
+
+@media screen and (max-width: 412px) {
+
+}
+
+@media screen and (max-width: 376px) {
+
+}
+
+@media screen and (max-width: 360px) {
+
+}
+
+@media screen and (max-width: 321px) {
+
+}
