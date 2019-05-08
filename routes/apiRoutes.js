@@ -8,10 +8,10 @@ module.exports = function(app) {
     });
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Create a new contact
+  app.post("/api/contacts", function(req, res) {
+    db.Contact.create(req.body).then(function(contacts_db) {
+      res.json(contacts_db);
     });
   });
 
