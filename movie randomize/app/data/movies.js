@@ -2,7 +2,7 @@ var movies = [
         
     {
         name: "Batman",
-        Photo: "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
+        photo: "https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
         scores: [
             "3",
             "1",
