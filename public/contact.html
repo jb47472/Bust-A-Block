@@ -5,24 +5,30 @@
   <meta charset="UTF-8">
   <title>Contact Us form</title>
   <link rel="stylesheet" href="./styles/style.css">
-  
+
 </head>
 
 <body>
-
   <div class="wrapper">
-    <div class="contact-form">
+    <div class="contact-form" id="registration_form">
       <div class="input-fields">
-        <input type="text" class="input" id= "name" placeholder="Name">
-        <input type="text" class="input" id="email" placeholder="Email Address">
-        <input type="text" class= "input" id= "phone" placeholder="Phone">
-        <input type="text" class= "input" id= "subject" placeholder="Subject">
-      </div>
-      <div class="msg">
-        <textarea class= "input" id= "message" placeholder="Message"></textarea>
-        <div id = "send" class="btn">send</div>
-
-      </div>
+        <form action="POST">
+          <input type="text" class="input" id="name" placeholder="Name" required>
+          <span class="error_form" id="name_error_message"></span>
+          <input type="text" class="input" id="email" placeholder="Email Address" required>
+          <span class="error_form" id="email_error_message"></span>
+          <input type="text" class="input" id="phone" placeholder="Phone" required>
+          <span class="error_form" id="phone_error_message"></span>
+          <input type="text" class="input" id="subject" placeholder="Subject">
+          <span class="error_form" id="subject_error_message"></span>
+        </div>
+        <div class="msg">
+          <textarea id="message" placeholder="Message" required></textarea>
+          <span class="error_form" id="message_error_message"></span>
+          <button type="submit" id ="submit" class="btn">send</button>
+          <!-- <div type="submit" id="send" class="btn">send</div> -->
+        </div>
+        </form>
     </div>
     <footer class="footer text-center">
       <div class="container">
@@ -54,11 +60,138 @@
         </div>
       </div> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/contact.js"></script>
+    <script type="text/javascript"></script>
 
- 
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
- <script src="./js/contact.js"></script>
+    <script>
+
+      $(function () {
+        $("#name_error_message").hide();
+        $("#email_error_message").hide();
+        $("#phone_error_message").hide();
+        $("#subject_error_message").hide();
+        $("#message_error_message").hide();
+
+
+        var error_name = false;
+        var error_email = false;
+        var error_phone = false;
+        var error_subject = false;
+        var error_message = false;
+
+
+        // $("#name").focusout(function () {
+        //   check_name();
+        // });
+
+        // $("#email").focusout(function () {
+        //   check_email();
+        // });
+
+        // $("#phone").focusout(function () {
+        //   check_phone();
+        // });
+
+        // $("#subject").focusout(function () {
+        //   check_subject();
+        // });
+
+        // $("#message").focusout(function () {
+        //   check_message();
+        // });
+
+
+        function check_name() {
+          var pattern = /[a-z].*[A-Z]|[A-Z].*[a-z]/;
+          var name = $("#name").val()
+          if (pattern.test(name) && name !== '') {
+            $("#name_error_message").hide();
+          }
+          else {
+            $("#name_error_message").html("Should contain only Characters");
+            $("#name_error_message").show();
+            error_name = true;
+          }
+        }
+
+        function check_email() {
+          var pattern = /^[^@]+@[^@]+\.[^@]+$/;
+          var email = $("#email").val();
+          if (pattern.test(email) && email !== '') {
+            $("#email_error_message").hide();
+          } else {
+            $("#email_error_message").html("Invalid Email");
+            $("#email_error_message").show();
+            error_email = true;
+          }
+        }
+
+        function check_phone() {
+          {
+            var phoneNumberPattern = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+            return phoneNumberPattern.test(check_phone);
+          }
+        }
+
+        function check_subject() {
+          var pattern = /[a-z].*[A-Z]|[A-Z].*[a-z]/;
+          var name = $("#subject").val()
+          if (pattern.test(subject) && subject !== '') {
+            $("#subject_error_message").hide();
+          }
+          else {
+            $("#subject_error_message").html("Should contain only Characters");
+            $("#subject_error_message").show();
+            error_subject = true;
+          }
+        }
+
+        function check_message() {
+          var pattern = /[a-z].*[A-Z]|[A-Z].*[a-z]/;
+          var name = $("#message").val()
+          if (pattern.test(message) && message !== '') {
+            $("#message_error_message").hide();
+          }
+          else {
+            $("#message_error_message").html("Should contain only Characters");
+            $("#message_error_message").show();
+            error_message = true;
+          }
+        }
+
+
+
+        $("#registration_form").submit(function() {
+          event.preventDefault();
+
+          error_name = false;
+          error_email = false;
+          error_phone = false;
+          error_subject = false;
+          error_message = false;
+          // const newUser = {
+
+          // }
+
+          check_name();
+          check_email();
+          check_phone();
+          check_subject();
+          check_message();
+          if (error_name === false && error_email === false && error_phone === false && error_subject === false && error_message === false) {
+            alert("Registration Successfull");
+            return true; // ajax post
+          } else {
+            alert("Please Fill the form Correctly");
+            return false;
+          }
+        });
+      })
+
+
+
+    </script>
 </body>
 
 </html>

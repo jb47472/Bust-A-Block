@@ -1,17 +1,20 @@
-$("#send").on("click", function(event) {
-//console.log(event)
 
+ $("#submit").on("click", function(event) {
+        event.preventDefault();
+      
+        var newUser = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            phone: $("#phone").val(),
+            subject: $("#subject").val(),
+            message: $("#message").val(),
+           
+        }
+        function upsertAuthor(authorData) {
+            $.post("/api/authors", authorData)
+              .then(getAuthors);
+          }
+        
+            console.log(newUser);
 
-var newUser ={
-name: $("#name").val(),
-email: $("#email").val(),
-phone: $("#phone").val(),
-subject: $("#subject").val(),
-message: $("#message").val(),
-}
-console.log(newUser)
-});
-
-    // event.preventDefault() can be used to prevent an event's default behavior.
-    // Here, it prevents the submit button from trying to submit a form when clicked
-   // event.preventDefault();
+    })
