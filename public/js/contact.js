@@ -10,10 +10,13 @@
             message: $("#message").val(),
            
         }
-        function upsertAuthor(authorData) {
-            $.post("/api/authors", authorData)
-              .then(getAuthors);
-          }
+      
+        
+        // function createNewUser() {
+          $.post("/api/contacts", newUser)
+            .then(window.location.href = 'http://localhost:3000/survey');
+        // }
+    
         
             console.log(newUser);
 
