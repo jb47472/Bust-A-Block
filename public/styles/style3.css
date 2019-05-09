@@ -1,0 +1,13 @@
+body{
+    background: red;
+    background-image: linear-gradient(red, rgb(177, 87, 87));
+    
+}
+
+h2 {
+    font-family: 'Gugi', cursive;
+}
+
+h3 {
+    font-family: 'Gugi', cursive;
+}
