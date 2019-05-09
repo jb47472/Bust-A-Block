@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "root",
-    "database": "quotes_db",
+    "database": "contacts_db",
     "host": "localhost",
     "dialect": "mysql"
   },

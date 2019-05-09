@@ -1,7 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
-  var Example = sequelize.define("Example", {
-    text: DataTypes.STRING,
-    description: DataTypes.TEXT
+  var Contact = sequelize.define("Contact", {
+    name: DataTypes.STRING,
+    email: DataTypes.STRING,
+    phone: DataTypes.STRING,
+    subject: DataTypes.STRING,
+   message: DataTypes.STRING
   });
-  return Example;
+  return Contact;
 };
