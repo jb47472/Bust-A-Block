@@ -1,17 +1,10 @@
 body{
-<<<<<<< HEAD
     background: url('') no-repeat top center;
     background-size: cover;
     height: 100vh;
     background: red;
     background-image: linear-gradient(red, rgb(177, 87, 87));
   }
-=======
-    background: red;
-    background-image: linear-gradient(red, rgb(177, 87, 87));
-    
-}
->>>>>>> 855fb565c0aaac3b47b9026d16723c666f73be24
 
 h1 {
     text-align: center;
