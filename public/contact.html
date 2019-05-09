@@ -192,6 +192,21 @@
           check_message();
           if (error_name === false && error_email === false && error_phone === false && error_subject === false && error_message === false) {
             alert("Registration Successfull");
+            // var newUser = {
+//             name: $("#name").val(),
+//             email: $("#email").val(),
+//             phone: $("#phone").val(),
+//             subject: $("#subject").val(),
+//             message: $("#message").val(),
+           
+//         }
+      
+        
+//         // function createNewUser() {
+//           $.post("/api/contacts", newUser)
+//             .then(window.location.href = 'http://localhost:3000/survey');
+//         // }
+  
             return true; // ajax post
           } else {
             alert("Please Fill the form Correctly");
