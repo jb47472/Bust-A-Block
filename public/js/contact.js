@@ -10,12 +10,9 @@ $("#submit").on("click", function (event) {
     message: $("#message").val(),
 
   }
-
-
-  // function createNewUser() {
   $.post("/api/contacts", newUser)
     .then(window.location.href = 'survey.html');
-  // }
+
 
 
   console.log(newUser);

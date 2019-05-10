@@ -16,7 +16,11 @@
     <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
     <!-- css -->
+<<<<<<< HEAD
     <link rel="stylesheet" type="text/css" href="../styles/style3.css" />
+=======
+    <link rel="stylesheet" type="text/css" href="../public/style.css" />
+>>>>>>> f71ccdf04f17fb619ab66c7e43ee13e41f9a4d5f
 
     <!-- chosen jquery pluggin that makes long, unwieldy select boxes much more user friendly-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
@@ -49,6 +53,8 @@
                         <optin value="6">6 (Crime)</option>
                     </select>
                 </div>
+<<<<<<< HEAD
+=======
             </section>
             <section class="form-group">
                 <h3>Question 2</h3>
@@ -68,6 +74,70 @@
                 </div>
             </section>
             <section class="form-group">
+                <h3>Question 3</h3>
+                <label for="item3" class="control-label">
+                    Pick a Runtime?
+                </label>
+                <div>
+                    <select class="form-control" id="item3">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1 (60 minutes)</option>
+                        <option value="2">2 (90 minutes)</option>
+                        <option value="3">3 (105 minutes)</option>
+                        <option value="4">4 (120 minutes)</option>
+
+                    </select>
+                </div>
+>>>>>>> f71ccdf04f17fb619ab66c7e43ee13e41f9a4d5f
+            </section>
+            <section class="form-group">
+                <h3>Question 2</h3>
+                <label for="item2" class="control-label">
+                    What is your favorite movie rating?
+                </label>
+                <div>
+                    <select class="form-control" id="item2">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1(Pg 13)</option>
+                        <option value="2">2(R)</option>
+                        <option value="3">3(G)</option>
+                        <option value="4">4(MA)</option>
+                        <option value="5">5(PG)</option>
+
+<<<<<<< HEAD
+=======
+            <section class="form-group">
+                <h3>Question 4</h3>
+                <label for="item4" class="control-label">
+                    Pick a Decade(s)
+                </label>
+                <div>
+                    <select class="form-control" id="item4">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1 (60's)</option>
+                        <option value="2">2 (70's)</option>
+                        <option value="3">3 (80's)</option>
+                        <option value="4">4 (90's)</option>
+                        <option value="5">5 (2000's)</option>
+                    </select>
+                </div>
+            </section>
+            <section class="form-group">
+                <h3>Question 5</h3>
+                <label for="item5" class="control-label">
+                    Do you like sitting through a movie that longer than two hours?
+                </label>
+                <div>
+                    <select class="form-control" id="item5">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1 (Yes)</option>
+                        <option value="2">2 (No)</option>
+>>>>>>> f71ccdf04f17fb619ab66c7e43ee13e41f9a4d5f
+                    </select>
+                </div>
+            </section>
+            <section class="form-group">
+<<<<<<< HEAD
                 <h3>Question 3</h3>
                 <label for="item3" class="control-label">
                     Pick a Runtime?
@@ -176,6 +246,23 @@
                 </select>
             </div>
         </section>
+=======
+                <h3>Question 6</h3>
+                <label for="item6" class="control-label">
+                    Pick a Language?
+                </label>
+                <div>
+                    <select class="form-control" id="item6">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1 (English)</option>
+                        <option value="2">2 (Spanish)</option>
+                        <option value="3">3 (Italian)</option>
+                        <option value="4">4 (German)</option>
+                        <option value="5">5 (French)</option>
+                    </select>
+                </div>
+            </section>
+>>>>>>> f71ccdf04f17fb619ab66c7e43ee13e41f9a4d5f
         </section>
 
         </section>
@@ -240,6 +327,7 @@
                 });
 
                 $(".chosen-select").each(function () {
+<<<<<<< HEAD
 
                     if ($(this).val() === "") {
                         isValid = false;
@@ -248,6 +336,16 @@
                 return isValid;
             }
 
+=======
+
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+>>>>>>> f71ccdf04f17fb619ab66c7e43ee13e41f9a4d5f
             //creating an object for the user data if the fields are filled
             if (validateForm()) {
 
@@ -265,6 +363,7 @@
                     ]
                 };
 
+<<<<<<< HEAD
 
 
                 var currentURL = window.location.origin;
@@ -281,6 +380,25 @@
             }
             else {
                 alert("please fill out all of the fields before hitting submitt");
+=======
+                $.post("/api/movies")
+                    .then(window.location.href = 'results.html');
+                //grab the URL 0f the website
+                // var currentURL = window.location.origin;
+
+                // $.post(currentURL + "/api/movies", userData, function (data) {
+
+                //     // grab image of the match and display
+                //     $("#matchName").text(data.name);
+                //     $("#matchImg").attr("src", data.photo);
+
+                //     $("#resultsModal").modal("toggle");
+
+                // });
+            }
+            else {
+                alert("please fill out all of the fields before hitting submit");
+>>>>>>> f71ccdf04f17fb619ab66c7e43ee13e41f9a4d5f
             }
             return false;
         });
