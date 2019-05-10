@@ -1,0 +1,12 @@
+body { 
+    background: red;
+    background-image: linear-gradient(gray, black);
+}
+
+#title {
+    font-family: 'Gugi', cursive;
+}
+
+p {
+    font-family: 'Gugi', cursive;
+}
