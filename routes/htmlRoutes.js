@@ -1,14 +1,22 @@
 var db = require("../models");
 
+var path = require("path");
+
+
 module.exports = function(app) {
-  // Load index page
+  // Load home.html
   app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+    res.sendFile(path.join(__dirname, "../public/home.html"));
+  });
+
+  // load contact.html
+  app.get("/contact", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/contact.html"));
+  });
+
+  // load survery.html
+  app.get("/survey", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/survey.html"));
   });
 
   // Load example page and pass in an example by id

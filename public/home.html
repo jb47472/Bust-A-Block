@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles/style2.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -20,13 +22,15 @@
     <br>
     <h1>Bust-A-Block!!</h1>
     <h3>The Movie-Chosing Website</h3>
+    <img id="reel" src="./images/reel.png">
 
-    <br><br>
+    <br>
     <div class="container">
 
         <div class="row">
 
             <div class="col-lg-2">
+                <img src="./images/reel2.png" id="left">
             </div>
 
             <div class="col-lg-8" id="box">
@@ -38,36 +42,68 @@
 
             </div>
 
+            <div class="col-lg-2">
+                <img src="./images/reel2.png" id="right">
+            </div>
+
         </div>
+        <br>
 
     </div>
 
     <br><br>
-    <button type="button" class="btn btn-primary btn-lg"><i class="fas fa-address-card"></i><a href="#">Take Survey!</a>
+    <button type="button" class="btn btn-primary btn-lg" onclick="window.location.href = 'contact.html'">
+        <i class="fas fa-address-card">Take Survey</a></i>
     </button>
+
+    <br><br>
 
     <div class="slideshow-container">
 
-
         <div class="mySlides fade">
-            <img src="img1.jpg" style="width:100%">
+            <img src="images/avengers.jpg" style="width:20%">
         </div>
 
         <div class="mySlides fade">
-            <img src="img2.jpg" style="width:100%">
+            <img src="images/notebook.jpg" style="width:20%">
         </div>
 
         <div class="mySlides fade">
-            <img src="img3.jpg" style="width:100%">
+            <img src="images/gump.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/lotr.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/titanic.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/shrek.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/avatar.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/exorcist.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/home_alone.jpg" style="width:20%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/dark_knight.jpg" style="width:20%">
         </div>
 
     </div>
     <br>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
+    <script src="./js/home.js"></script>
 </body>
+
+</html>
