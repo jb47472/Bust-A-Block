@@ -18,6 +18,12 @@ module.exports = function(app) {
   app.get("/survey", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/survey.html"));
   });
+  app.get("/results", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/results.html"));
+  });
+
+  // load results.html
+
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
