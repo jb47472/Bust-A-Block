@@ -37,7 +37,6 @@
         <textarea id="message" placeholder="Message" required></textarea>
         <span class="error_form" id="message_error_message"></span>
         <button type="submit" id="submit" class="btn" onclick="window.location.href = 'survey.html'">send</button>
-        <!-- <div type="submit" id="send" class="btn">send</div> -->
       </div>
       </form>
     </div>
@@ -55,21 +54,6 @@
         </p>
       </div>
     </footer>
-
-    <!-- <div class="wrapper">
-        <div class="contact-form2">
-          <div class="input-fields">
-            <input type="text" class="input" placeholder="Name">
-            <input type="text" class="input" placeholder="Email Address">
-            <input type="text" class="input" placeholder="Phone">
-            <input type="text" class="input" placeholder="Subject">
-          </div>
-          <div class="msg">
-            <textarea placeholder="Message"></textarea>
-            <div class="btn">send</div>
-          </div>
-        </div>
-      </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/contact.js"></script>
@@ -90,27 +74,6 @@
         var error_phone = false;
         var error_subject = false;
         var error_message = false;
-
-
-        // $("#name").focusout(function () {
-        //   check_name();
-        // });
-
-        // $("#email").focusout(function () {
-        //   check_email();
-        // });
-
-        // $("#phone").focusout(function () {
-        //   check_phone();
-        // });
-
-        // $("#subject").focusout(function () {
-        //   check_subject();
-        // });
-
-        // $("#message").focusout(function () {
-        //   check_message();
-        // });
 
 
         function check_name() {
@@ -192,22 +155,7 @@
           check_message();
           if (error_name === false && error_email === false && error_phone === false && error_subject === false && error_message === false) {
             alert("Registration Successfull");
-            // var newUser = {
-            //             name: $("#name").val(),
-            //             email: $("#email").val(),
-            //             phone: $("#phone").val(),
-            //             subject: $("#subject").val(),
-            //             message: $("#message").val(),
-
-            //         }
-
-
-            //         // function createNewUser() {
-            //           $.post("/api/contacts", newUser)
-            //             .then(window.location.href = 'http://localhost:3000/survey');
-            //         // }
-
-            return true; // ajax post
+            return true; 
           } else {
             alert("Please Fill the form Correctly");
             return false;
