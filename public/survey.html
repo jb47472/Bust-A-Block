@@ -5,32 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FriendFinder</title>
-    <!-- Latest compiled and minified CSS & JS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <!-- Font Awesome Glyphicons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="../styles/style3.css" />
 
-    <!-- chosen jquery pluggin that makes long, unwieldy select boxes much more user friendly-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./styles/style3.css">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
 </head>
 
 <body>
+
+    <header>
+        <img id="reel" src="https://media3.giphy.com/media/Vw3k4Vro0Q5KE/giphy.gif">
+    </header>
     <div class="container">
+        <br>
         <h2>Movie Generator</h2>
-        <hr>
+        <hr id="break">
         <h3><strong>About You</strong></h3>
         <p>Please answer all questions in the required field</p>
         <h4>Name (Required)</h4>
         <input type="text" name="" id="name" class="form-control" required>
+        <br>
 
         <section id="friend-form">
             <section class="form-group">
@@ -84,65 +84,54 @@
                 </div>
             </section>
             <section class="form-group">
-                <h3>Question 2</h3>
-                <label for="item2" class="control-label">
-                    What is your favorite movie rating?
+
+
+
+                <h3>Question 4</h3>
+                <label for="item4" class="control-label">
+                    Pick a Decade(s)
                 </label>
                 <div>
-                    <select class="form-control" id="item2">
+                    <select class="form-control" id="item4">
                         <option value="" selected disabled>Choose</option>
-                        <option value="1">1(Pg 13)</option>
-                        <option value="2">2(R)</option>
-                        <option value="3">3(G)</option>
-                        <option value="4">4(MA)</option>
-                        <option value="5">5(PG)</option>
-
-                        <section class="form-group">
-                            <h3>Question 4</h3>
-                            <label for="item4" class="control-label">
-                                Pick a Decade(s)
-                            </label>
-                            <div>
-                                <select class="form-control" id="item4">
-                                    <option value="" selected disabled>Choose</option>
-                                    <option value="1">1 (60's)</option>
-                                    <option value="2">2 (70's)</option>
-                                    <option value="3">3 (80's)</option>
-                                    <option value="4">4 (90's)</option>
-                                    <option value="5">5 (2000's)</option>
-                                </select>
-                            </div>
-                        </section>
-                        <section class="form-group">
-                            <h3>Question 5</h3>
-                            <label for="item5" class="control-label">
-                                Do you like sitting through a movie that longer than two hours?
-                            </label>
-                            <div>
-                                <select class="form-control" id="item5">
-                                    <option value="" selected disabled>Choose</option>
-                                    <option value="1">1 (Yes)</option>
-                                    <option value="2">2 (No)</option>
-                                </select>
-                            </div>
-                        </section>
-                        <section class="form-group">
-                            <h3>Question 6</h3>
-                            <label for="item6" class="control-label">
-                                Pick a Language?
-                            </label>
-                            <div>
-                                <select class="form-control" id="item6">
-                                    <option value="" selected disabled>Choose</option>
-                                    <option value="1">1 (English)</option>
-                                    <option value="2">2 (Spanish)</option>
-                                    <option value="3">3 (Italian)</option>
-                                    <option value="4">4 (German)</option>
-                                    <option value="5">5 (French)</option>
-                                </select>
-                            </div>
-                        </section>
+                        <option value="1">1 (60's)</option>
+                        <option value="2">2 (70's)</option>
+                        <option value="3">3 (80's)</option>
+                        <option value="4">4 (90's)</option>
+                        <option value="5">5 (2000's)</option>
+                    </select>
+                </div>
             </section>
+            <section class="form-group">
+                <h3>Question 5</h3>
+                <label for="item5" class="control-label">
+                    Do you like sitting through a movie that longer than two hours?
+                </label>
+                <div>
+                    <select class="form-control" id="item5">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1 (Yes)</option>
+                        <option value="2">2 (No)</option>
+                    </select>
+                </div>
+            </section>
+            <section class="form-group">
+                <h3>Question 6</h3>
+                <label for="item6" class="control-label">
+                    Pick a Language?
+                </label>
+                <div>
+                    <select class="form-control" id="item6">
+                        <option value="" selected disabled>Choose</option>
+                        <option value="1">1 (English)</option>
+                        <option value="2">2 (Spanish)</option>
+                        <option value="3">3 (Italian)</option>
+                        <option value="4">4 (German)</option>
+                        <option value="5">5 (French)</option>
+                    </select>
+                </div>
+            </section>
+        </section>
 
         </section>
         </section>

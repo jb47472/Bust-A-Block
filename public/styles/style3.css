@@ -1,7 +1,16 @@
-body{
+body { 
     background: red;
     background-image: linear-gradient(red, rgb(177, 87, 87));
-    
+}
+
+#break {
+    border-style: solid;
+    border-color: black;
+}
+
+#reel {
+    width: 100%;
+    height: 300px;
 }
 
 h2 {
@@ -10,4 +19,8 @@ h2 {
 
 h3 {
     font-family: 'Gugi', cursive;
+}
+
+.form-control {
+    width: 50%;
 }
