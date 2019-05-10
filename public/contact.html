@@ -21,14 +21,14 @@
           <span class="error_form" id="phone_error_message"></span>
           <input type="text" class="input" id="subject" placeholder="Subject">
           <span class="error_form" id="subject_error_message"></span>
-        </div>
-        <div class="msg">
-          <textarea id="message" placeholder="Message" required></textarea>
-          <span class="error_form" id="message_error_message"></span>
-          <button type="submit" id ="submit" class="btn">send</button>
-          <!-- <div type="submit" id="send" class="btn">send</div> -->
-        </div>
-        </form>
+      </div>
+      <div class="msg">
+        <textarea id="message" placeholder="Message" required></textarea>
+        <span class="error_form" id="message_error_message"></span>
+        <button type="submit" id="submit" class="btn" onclick="window.location.href = 'survey.html'">send</button>
+        <!-- <div type="submit" id="send" class="btn">send</div> -->
+      </div>
+      </form>
     </div>
     <footer class="footer text-center">
       <div class="container">
@@ -162,7 +162,7 @@
 
 
 
-        $("#registration_form").submit(function() {
+        $("#registration_form").submit(function () {
           event.preventDefault();
 
           error_name = false;
@@ -182,20 +182,20 @@
           if (error_name === false && error_email === false && error_phone === false && error_subject === false && error_message === false) {
             alert("Registration Successfull");
             // var newUser = {
-//             name: $("#name").val(),
-//             email: $("#email").val(),
-//             phone: $("#phone").val(),
-//             subject: $("#subject").val(),
-//             message: $("#message").val(),
-           
-//         }
-      
-        
-//         // function createNewUser() {
-//           $.post("/api/contacts", newUser)
-//             .then(window.location.href = 'http://localhost:3000/survey');
-//         // }
-  
+            //             name: $("#name").val(),
+            //             email: $("#email").val(),
+            //             phone: $("#phone").val(),
+            //             subject: $("#subject").val(),
+            //             message: $("#message").val(),
+
+            //         }
+
+
+            //         // function createNewUser() {
+            //           $.post("/api/contacts", newUser)
+            //             .then(window.location.href = 'http://localhost:3000/survey');
+            //         // }
+
             return true; // ajax post
           } else {
             alert("Please Fill the form Correctly");

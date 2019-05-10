@@ -7,6 +7,9 @@ module.exports = function(app) {
       res.json(contacts_db);
     });
   });
+  
+
+
 
   // Create a new contact to MySQL
   app.post("/api/contacts", function(req, res) {
