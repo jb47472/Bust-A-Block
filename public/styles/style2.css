@@ -1,9 +1,7 @@
 body{
     background: url('') no-repeat top center;
     background-size: cover;
-    height: 100vh;
-    background: red;
-    background-image: linear-gradient(red, rgb(177, 87, 87));
+    background-image: linear-gradient(to right top, #0f62df, #008ee0, #00a8b8, #61ba95, #b7c598);
   }
 
 h1 {
@@ -139,7 +137,7 @@ a:link {
 
 .slideshow-container {
   background: black;
-  background-image: linear-gradient(gray,black);
+  background-image: linear-gradient(to bottom, #1e1b1d, #312331, #402c4b, #47386a, #40478c);
   border-radius: 250px;
   border-style: dotted;
   border-color: white;
