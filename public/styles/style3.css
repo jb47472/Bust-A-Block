@@ -1,0 +1,25 @@
+body { 
+        background-image: linear-gradient(to right top, #0f62df, #008ee0, #00a8b8, #61ba95, #b7c598);
+    }
+
+#break {
+    border-style: solid;
+    border-color: black;
+}
+
+#reel {
+    width: 100%;
+    height: 300px;
+}
+
+h2 {
+    font-family: 'Gugi', cursive;
+}
+
+h3 {
+    font-family: 'Gugi', cursive;
+}
+
+.form-control {
+    width: 50%;
+}

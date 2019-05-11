@@ -13,8 +13,7 @@ body{
   /* need background image^ */
   background-size: cover;
   height: 100vh;
-    background: red;
-    background-image: linear-gradient(red, rgb(177, 87, 87));
+  background-image: linear-gradient(to right top, #0f62df, #008ee0, #00a8b8, #61ba95, #b7c598);
 }
 
 a:link {

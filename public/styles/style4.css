@@ -1,0 +1,11 @@
+body { 
+    background-image: linear-gradient(to right top, #0f62df, #008ee0, #00a8b8, #61ba95, #b7c598);
+}
+
+#title {
+    font-family: 'Gugi', cursive;
+}
+
+p {
+    font-family: 'Gugi', cursive;
+}
